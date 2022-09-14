@@ -33,7 +33,7 @@ namespace LenovoLegionToolkit.Lib.Listeners
 
         protected override Task OnChangedAsync(SpecialKey value)
         {
-            if (value is SpecialKey.Fn_R or SpecialKey.Fn_R_2)
+            if (value is SpecialKey.Fn_R)
                 return ToggleRefreshRateAsync();
 
             if (value is SpecialKey.Fn_PrtSc)
